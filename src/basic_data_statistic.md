@@ -117,7 +117,7 @@ SELECT sponsoring_registrar, COUNT(*) num FROM whois WHERE ID IN (SELECT ID FROM
 |22NET, INC.|396|
 |eName Technology Co., Ltd.| 337|
 
-##敏感词
+## 敏感词
 
 **benign**
 ```
@@ -183,9 +183,9 @@ SELECT cmp, COUNT(*) num FROM locate WHERE ID IN (SELECT ID FROM other_info WHER
 | 1|1|
 
 ---
-*几个要注意的地方：
-1.cmp为0的实际是没有运行结果的;
-2.以上划分的粒度待定，先这样确定作为测试
+* 几个要注意的地方：
+1.cmp为0的实际是没有运行结果的;</br>
+2.以上划分的粒度待定，先这样确定作为测试;</br>
 3.ttl的问题
 ---
 暂时整理这些特征项
