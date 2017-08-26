@@ -182,11 +182,43 @@ SELECT cmp, COUNT(*) num FROM locate WHERE ID IN (SELECT ID FROM other_info WHER
 | 12 | 1 |
 | 1|1|
 
+##HTTPcode
+**benign**
+```
+SELECT HTTPcode, COUNT(*) num FROM malicious_info WHERE ID IN (SELECT ID FROM other_info WHERE web_judge_result = 1) GROUP BY HTTPcode ORDER BY num DESC;
+```
+| HTTPcode        | COUNT           |
+| ------------- |:-------------:|
+| 2××| 3678 |
+| 3×× | 6 |
+| 4××    |523|
+| 5×× |54|
+| 0| 35|
+| -2|1195|
+| -3 |1325|
+| -4| 494|
+
+**malicious**
+```
+SELECT HTTPcode, COUNT(*) num FROM malicious_info WHERE ID IN (SELECT ID FROM other_info WHERE web_judge_result = 2 or web_judge_result = 3) GROUP BY HTTPcode ORDER BY num DESC;
+
+```
+| HTTPcode        | COUNT           |
+| ------------- |:-------------:|
+| 2××| 5107 |
+| 3×× | 28 |
+| 4××    |691|
+| 5×× |129|
+| 0| 0|
+| -2|13493|
+| -3 |3881|
+| -4| 945|
+
 ---
 * 几个要注意的地方：
 1.cmp为0的实际是没有运行结果的;</br>
-2.以上划分的粒度待定，先这样确定作为测试;</br>
+2.以上划分的粒度待定(other覆盖多少)，先这样确定作为测试;</br>
 3.ttl的问题
 ---
 暂时整理这些特征项
-2017.08.24
+2017.08.26

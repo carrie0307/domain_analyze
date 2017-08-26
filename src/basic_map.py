@@ -12,8 +12,18 @@ spon_registrar_Map = {'':0, 'HICHINA ZHICHENG TECHNOLOGY LTD.':1, 'XINNET TECHNO
                     'eName Technology Co., Ltd.':3, 'West263 International Limited':4, '阿里云计算有限公司（万网）':5,
                     'Bizcn.com,Inc.':6, '22NET, INC.':7, 'SHANGHAI MEICHENG TECHNOLOGY INFORMATION DEVELOPMENT CO., LTD.':8,
                     'Beijing Innovative Linkage Technology Ltd. dba dns.com.cn':9,
-                    'PDR Ltd. d/b/a PublicDomainRegistry.com':10, 'ENOM, INC.':11,'':12}
+                    'PDR Ltd. d/b/a PublicDomainRegistry.com':10, 'ENOM, INC.':11,'other':12}
 
-keyword_Map = {'8':1, '9':2, '2':3, '1':4, '0':5}
+keyword_Map = {'8':1, '9':2, '2':3, '1':4, '0':5, '6':5}
 
-cmp_Map = {'-2':1, '22':2, '33':3, '11':4, '21':5, '32':6, '0':7, '31':8, '23':9, '10':10, '44':11}
+cmp_Map = {'-2':1, '22':2, '33':3, '11':4, '21':5, '32':6, '0':7, '31':8, '23':9, '10':10, '44':11, 'other':12}
+
+def Httpcode_Map(num):
+    if num >= 300:
+        return 1
+    elif num >= 0:
+        return 2
+    elif num == -2:
+        return 3
+    else:
+        return 4
