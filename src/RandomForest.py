@@ -26,8 +26,8 @@ def build_decision_tree(filename):
     for index, line in enumerate(reader):
         if index != 0:
             # x.append(map(deal_division, line[1:7]))
-            x.append(line[1:7])
-            y.append(line[-1])
+            x.append(line[1:])
+            y.append(line[0])
     x_train,x_test,y_train,y_test=cross_validation.train_test_split(x,y, test_size=0.2)
     # criterion='entropy',max_depth=5
     clf = RandomForestClassifier(n_estimators=10, max_depth=None,min_samples_split=2, random_state=42)
@@ -46,20 +46,18 @@ def predict(domain, clf):
 
 
 if __name__ == '__main__':
-    clf, score = build_decision_tree('../data/dataset-http-cmp-more.csv')
-    f=open('../data/dataset-http-cmp-more.csv','r')
+    # clf, score = build_decision_tree('../data/coding-features.csv')
+    # predict("boda19.com", clf)
+    clf, score = build_decision_tree('../data/coding-features.csv')
+    f=open('../data/coding-features.csv','r')
     reader=csv.reader(f)
     counter = 0
     print 'predicting ...'
     for index, line in enumerate(reader):
         if index != 0:
-            print line[1:7]
-            res = clf.predict([line[1:7]])[0] # 得到预测结果
+            res = clf.predict([line[1:]])[0] # 得到预测结果
             print res
-            if res == str(line[-1]):
+            if int(res) == int(line[0]):
                 counter = counter + 1
     print "正确预测:" + str(counter) + "\n"
     print "准确率：" + str(counter / index) + "\n"
-
-    # clf, score = build_decision_tree('../data/dataset-http-cmp-more.csv')
-    # predict("boda19.com", clf)
