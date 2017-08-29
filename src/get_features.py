@@ -3,8 +3,6 @@ import MySQLdb
 import basic_map
 
 
-
-
 class Domain_features():
     def __init__(self, domain):
         self.domain = domain
