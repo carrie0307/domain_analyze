@@ -25,8 +25,6 @@ def get_pd(filename):
             features.append(line)
         else:
             columns = line
-        if index > 10:
-            break
     df = pd.DataFrame(features)
     df.columns = columns
     return df
