@@ -17,7 +17,7 @@ def get_domains():
     global domain_q
     con = MySQLdb.connect("172.26.253.3", "root", "platform","malicious_domain_sys")
     cur=con.cursor()
-    SQL = "select ID,domain from domain_index where source = '103'"
+    SQL = "select HTTPcode from malicious_info where ID in (select ID from domain_index where source = '101') and HTTPcode = '0'"
     cur.execute(SQL)
     result = cur.fetchall()
     cur.close()
@@ -57,10 +57,7 @@ def save_Httpcode():
     con = MySQLdb.connect("172.26.253.3", "root", "platform","malicious_domain_sys")
     cur=con.cursor()
     while True:
-        try:
-            ID, code = res_q.get(timeout=60)
-        except:
-            break
+        ID, code = res_q.get(timeout=60)
         SQL = 'UPDATE malicious_info SET HTTPcode = %s WHERE ID = %s' %(code,ID)
         print SQL + "\n"
         cur.execute(SQL)

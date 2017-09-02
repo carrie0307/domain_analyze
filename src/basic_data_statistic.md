@@ -183,6 +183,18 @@ SELECT cmp, COUNT(*) num FROM locate WHERE ID IN (SELECT ID FROM other_info WHER
 | 1|1|
 
 ##HTTPcode
+
+| HTTPcode        | 含义           |
+| ------------- |:-------------:|
+| 2××| 状态码2×× |
+| 3×× | 状态码3××|
+| 4××    |状态码4××|
+| 5×× |状态码5××|
+| 0| ---|
+| -2|timeout|
+| -3 |除timeout外的其他URLError|
+| -4| 除上述以外的异常|
+
 **benign**
 ```
 SELECT HTTPcode, COUNT(*) num FROM malicious_info WHERE ID IN (SELECT ID FROM other_info WHERE web_judge_result = 1) GROUP BY HTTPcode ORDER BY num DESC;

@@ -17,7 +17,7 @@ abnormal_domains = ['agherhaerf.ga','interlei.gr','icloud-iphnoe.ren',
 'gyivz.ren','0635jia.com','id-apple.asia',
 '4399.cm','apple-ic-icluod.ren','cloudns.asia',
 'apple-id.asia','163.cm','yh.cm','ccbycc.pw','icloud-apple-ip.ren',
-'apple-app.ren','netgate.co.za','yhvfyjhguijf.ga','apple-iphnoe-icloud.ren']
+'apple-app.ren','netgate.co.za','yhvfyjhguijf.ga','apple-iphnoe-icloud.ren'] # 异常的域名，不做处理
 
 con = MySQLdb.connect("172.26.253.3", "root", "platform","malicious_domain_sys")
 cur=con.cursor()
@@ -70,6 +70,9 @@ def get_malicious__info():
 
 
 def get_locateCMP_info():
+    '''
+    读取地理位置比对结果
+    '''
     global features_dict
     SQL = "SELECT ID, cmp from locate WHERE ID IN (%s)" %(basicID_set)
     cur.execute(SQL)
@@ -87,9 +90,10 @@ def get_locateCMP_info():
     print 'locate got ... \n'
 
 
-
-
 def get_web_flag_result():
+    '''
+    读取权威网站检测结果
+    '''
     global features_dict
     SQL = "SELECT ID, web_judge_result FROM other_info WHERE ID IN (%s)" %(basicID_set)
     cur.execute(SQL)

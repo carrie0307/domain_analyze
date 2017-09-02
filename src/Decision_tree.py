@@ -40,9 +40,12 @@ def build_decision_tree(filename):
 
 def main(filename):
     clf, score = build_decision_tree(filename)
-    # dot_data = tree.export_graphviz(clf,out_file='data-3-gini-tree.dot', feature_names=['tld','email_type','spon_registrar','keyword','locate_cmp'],
-    #                      class_names=['1','2'], filled=True, rounded=True)
-    # graph = graphviz.Source(dot_data)
+    '''
+    对建立的决策树模型可视化的过程，通过graphviz实现，相关具体参见 http://scikit-learn.org/stable/modules/tree.html
+    dot_data = tree.export_graphviz(clf,out_file='data-3-gini-tree.dot', feature_names=['tld','email_type','spon_registrar','keyword','locate_cmp'],
+                          class_names=['1','2'], filled=True, rounded=True)
+    graph = graphviz.Source(dot_data)
+    '''
 
 
 def predict(domain,clf):

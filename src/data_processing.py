@@ -37,7 +37,10 @@ def encode_class_labes(df):
 
 
 def encode_nominal_labes(df):
-    # ohe = OneHotEncoder(categorical_features=[0], sparse=False)
+    '''
+    对无序特征进行编码处理（读入的特征项内容可以是字符串）
+    '''
+    # 对'tld','email_type','spon_registrar'这些列的内容进行处理
     df = pd.get_dummies(df[['tld','email_type','spon_registrar','keyword', 'httpcode', 'locate_cmp', 'web_judge_result']])
     # 这里一定要令df=pd.get_dummies(df[['####',...]]),否则df不变
     return df

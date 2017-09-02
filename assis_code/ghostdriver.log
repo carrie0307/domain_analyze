@@ -1,0 +1,160 @@
+[INFO  - 2017-08-30T06:38:03.916Z] GhostDriver - Main - running on port 50440
+[INFO  - 2017-08-30T06:38:03.963Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-30T06:38:03.970Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.customHeaders:  - {}
+[INFO  - 2017-08-30T06:38:03.971Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-30T06:38:03.972Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c67257b0-8d4d-11e7-b52a-b189b1bb36a5
+[ERROR - 2017-08-30T06:38:27.123Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:38:27.135Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:41:19.987Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:41:19.999Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:41:55.923Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:41:55.936Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:41:57.440Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:41:57.442Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:42:00.034Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:42:00.055Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-08-30T06:43:03.923Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-08-30T06:44:47.605Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:44:47.612Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:45:33.280Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:45:33.284Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:46:05.116Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:46:05.120Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:47:25.123Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-30T06:47:25.124Z] Session [c67257b0-8d4d-11e7-b52a-b189b1bb36a5] - page.onError - stack:
+  search_url_score (https://guanjia.qq.com/online_server/webindex.html:208)
+  onclick (https://guanjia.qq.com/online_server/webindex.html:155)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-08-30T06:48:03.936Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
